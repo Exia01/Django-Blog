@@ -9,7 +9,7 @@ class Article(models.Model):
     # created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now_add=True)
 
-    # add in thumbnail later
+    thumb = models.ImageField(default='default.png', blank=True) # if image is not given, then it will automatically select one for us. 
     # add  in author later
     # def __str__(self):
     #     return self.title
