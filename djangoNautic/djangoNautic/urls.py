@@ -3,6 +3,7 @@ from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from articles import views as article_views
 
 from . import views
 
@@ -11,7 +12,7 @@ from . import views
 # the $ means it needs to end like that
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.homepage),
+    url(r'^$',article_views.article_list, name='home'),
 
     # Apps
     url(r'^accounts/', include('accounts.urls')),
