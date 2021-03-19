@@ -16,7 +16,7 @@ django-crispy-forms==1.7.2
 django-debug-toolbar==1.9.1
 django-filter==2.0.0
 django-markdown-deux==1.0.5
-djangorestframework==3.8.2
+djangorestframework==3.11.2
 Flask==1.0.2
 Flask-Bcrypt==0.7.1
 idna==2.7
